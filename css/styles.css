@@ -1,0 +1,103 @@
+/*Général*/ 
+@font-face {
+    font-family: "Poppins";
+    src: url("../polices/Poppins/Poppins-Regular.ttf") format("TrueType");
+}
+
+*{
+    width:auto;
+    height:auto;
+    margin:0;   
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    min-width: 100vh;
+    min-height:100vh; 
+    background-color: rgba(68, 117, 136, 0.548);
+}
+
+h1 {
+    padding: 5%;
+    text-align: center;
+}
+
+/*Cards*/
+#container {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+                rgba(0, 0, 0, 3) 0px 18px 36px -18px;
+        
+    overflow: hidden;
+}
+
+/* .card:hover {
+    transform: translateX(-10px) translateY(-15px);
+} */
+
+
+.card:hover .favoris {
+    left: 0px;
+}
+
+.card-header {
+    object-fit: cover;
+}
+
+.card-header img {    
+    height:200px;   
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    filter: grayscale(1);
+}
+
+.card-header img:hover {
+    filter: grayscale(0);
+}
+
+.card2 {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.card-text {
+    padding : 30px;
+    font-size: 14px;
+    font-family: "Poppins", "Arial", "Helvetica";
+}
+
+h2 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.favoris img {
+    width: 30%;    
+}
+
+.favoris {
+    position: absolute; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: -55px;
+    width: 18%;   
+    height: 10%; 
+    background-color: rgb(227, 11, 92);
+    border-radius: 10px 0 0 0;
+    transition: 0.5s; 
+}
+
+
